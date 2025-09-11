@@ -390,4 +390,7 @@ img {
   content: url(../img/slider_arrow.svg);
   width: 60px;
   height: 60px;
+}
+.befor-after__slider {
+  max-width: 50%;
 }/*# sourceMappingURL=index.css.map */
