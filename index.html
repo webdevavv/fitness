@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="normolize.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
@@ -142,6 +147,9 @@
                 <a href="#">Купить</a>
               </div>
             </div>
+            <div class="price__image">
+              <img src="img/Frame18.png" alt="" />
+            </div>
           </div>
           <h3>Курс для тех, кто:</h3>
           <p class="price__text">
@@ -160,12 +168,54 @@
       </div>
     </section>
 
+    <section class="section befor-after">
+      <h2>До/после:</h2>
+      <div class="container">
+        <div class="befor-after__inner">
+          <div class="swiper-button-prev"></div>
+
+          <div class="swiper befor-after__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/before-after.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/before-after.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/before-after.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/before-after.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/before-after.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
     <br />
     <br />
     <br />
     <br />
     <br />
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".befor-after__slider", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <script src="index.js"></script>
   </body>
 </html>
